@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "✅ Running pre-commit checks..."
+if ! bun run format; then
+  echo "❎ Formatting issues found. Please format your code before committing."
+  exit 1
+fi
+if ! bun run lint; then
+  echo "❎ Linting errors found. Please fix them before committing."
+  exit 1
+fi
+echo "✅ Pre-commit checks passed! Time to build!"
+echo "Running build"
+bun run build
+echo "✅ Build complete!"
+echo "✅ Pushing to git!"
