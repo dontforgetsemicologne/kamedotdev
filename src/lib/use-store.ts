@@ -13,5 +13,5 @@ export const useStore = create<Store>((set) => ({
   setPageTransition: (pageTransition) => set({ pageTransition }),
 
   loaded: false,
-  setLoaded: (loaded) => set({ loaded }),
+  setLoaded: (loaded) => set({ loaded })
 }));
