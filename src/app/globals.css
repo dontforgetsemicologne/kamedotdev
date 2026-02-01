@@ -6,6 +6,26 @@
   src: url("/fonts/Manrope.woff2");
 }
 
+/* Suisseintl Webxl */
+@font-face {
+  font-family: "Suisseintl Webxl";
+  src: url("/fonts/Suisseintl-Webxl-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Suisseintl Webxl";
+  src: url("/fonts/Suisseintl-Webxl-Black.woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
 @theme inline {
   --font-manrope: var(--font-manrope, "Manrope", sans-serif);
+  --font-suisseintl-webxl: var(
+    --font-suisseintl-webxl,
+    "Suisseintl Webxl",
+    sans-serif
+  );
 }
