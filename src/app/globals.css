@@ -21,11 +21,22 @@
   font-style: normal;
 }
 
+/* Thunder-Bold LC */
+@font-face {
+  font-family: "Thunder-Bold LC";
+  src: url("/fonts/Thunder-BoldLC.woff");
+}
+
 @theme inline {
   --font-manrope: var(--font-manrope, "Manrope", sans-serif);
   --font-suisseintl-webxl: var(
     --font-suisseintl-webxl,
     "Suisseintl Webxl",
+    sans-serif
+  );
+  --font-thunder-bold-lc: var(
+    --font-thunder-bold-lc,
+    "Thunder-Bold LC",
     sans-serif
   );
 }
